@@ -1,0 +1,49 @@
+
+/* Logo animation */
+
+.animate-logo {
+  display: flex;
+  align-items: center;
+  height: 0;
+  max-width: 300px;
+}
+
+.brand span {
+  font-family: 'Merienda', cursive;
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  top: 40px;
+  left: 75px;
+  z-index: 1;
+}
+
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+@keyframes rotateZ {
+  from {
+    transform: rotateZ(0deg);
+    }
+  to {
+    transform: rotateZ(360deg);
+    }
+}
+
+.logo img {
+  animation-name: slide, rotateZ;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-delay: 0.5s; 
+  position: absolute;
+  width: 75px;
+  height: auto;
+}
