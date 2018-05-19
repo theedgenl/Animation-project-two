@@ -127,7 +127,7 @@ header {
 
 h1 {
   font-family: 'Merienda', cursive;
-  padding-top: 0.5rem;
+  padding-left: 1rem;
   font-size: 1.5rem;
 }
 .jumbotron {
@@ -137,9 +137,9 @@ h1 {
 /* Gallery */
 .gallery {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
-
 }
 
 .container {
