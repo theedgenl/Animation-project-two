@@ -129,10 +129,8 @@ h1 {
   font-family: 'Merienda', cursive;
   padding-top: 0.5rem;
   font-size: 1.5rem;
-  text-align: center;
 }
 .jumbotron {
-  height: 700px;
   background-color: lightGreen;
 }
 
@@ -141,13 +139,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 3rem;
+
 }
 
 .container {
   position: relative;
   width: 270px;
-  margin: 0.2rem;
+  margin: 0.3rem;
 }
 
 .image {
