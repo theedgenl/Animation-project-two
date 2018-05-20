@@ -90,8 +90,8 @@ header {
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -144,6 +144,7 @@ header {
 h1 {
   font-family: 'Merienda', cursive;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .jumbotron {
@@ -277,4 +278,82 @@ footer img {
 footer span {
   font-family: 'Merienda', cursive;
   font-size: 0.8rem;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:1024px) {
+  header {
+    height: 55px;
+  }
+  .logo img {
+    width: 45px;
+  }
+  .brand span {
+    font-size: 1.5rem;
+    left: 45px;
+  }
+  main {
+    top: 55px;
+  }
+  .dropbtn {
+    padding: 0.8rem;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  @keyframes slide {
+    0% {
+      left: 5%;
+    }
+    100% {
+      left: 35%;
+    }
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .container {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width:535px) {
+  .text-container {
+    max-width: 300px;
+  }
+  @keyframes slide {
+    0% {
+      left: 5%;
+    }
+    100% {
+      left: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width:350px) {
+  .brand span {
+    font-size: 1rem;
+  }
+  @keyframes slide {
+    0% {
+      left: 5%;
+    }
+    100% {
+      left: 45%;
+    }
+  }
+  .dropbtn {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .container {
+    width: 100px;
+  }
 }
